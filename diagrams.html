@@ -1,0 +1,804 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Diagrams · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tables.html" />
+    
+    
+    <link rel="prev" href="tutorial/ft.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    TEO Developer Manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Cognitive Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="overview/">
+            
+                <a href="overview/">
+            
+                    
+                    Software Repositories
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="overview/pc.html">
+            
+                <a href="overview/pc.html">
+            
+                    
+                    PC Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="overview/firmware.html">
+            
+                <a href="overview/firmware.html">
+            
+                    
+                    Firmware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="overview/demonstration.html">
+            
+                <a href="overview/demonstration.html">
+            
+                    
+                    Demonstration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="overview/research.html">
+            
+                <a href="overview/research.html">
+            
+                    
+                    Research
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="overview/development.html">
+            
+                <a href="overview/development.html">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="tutorial/">
+            
+                <a href="tutorial/">
+            
+                    
+                    Tutorial
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="tutorial/motor.html">
+            
+                <a href="tutorial/motor.html">
+            
+                    
+                    Motor Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="tutorial/trajectories.html">
+            
+                <a href="tutorial/trajectories.html">
+            
+                    
+                    Trajectory Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="tutorial/rgbd.html">
+            
+                <a href="tutorial/rgbd.html">
+            
+                    
+                    RGB-D Sensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="tutorial/mesh.html">
+            
+                <a href="tutorial/mesh.html">
+            
+                    
+                    Mesh From Real Depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="tutorial/ft.html">
+            
+                <a href="tutorial/ft.html">
+            
+                    
+                    Force/Torque Sensors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="diagrams.html">
+            
+                <a href="diagrams.html">
+            
+                    
+                    Diagrams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="tables.html">
+            
+                <a href="tables.html">
+            
+                    
+                    Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="dynamic-information.html">
+            
+                <a href="dynamic-information.html">
+            
+                    
+                    Dynamic information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="switches-and-power.html">
+            
+                <a href="switches-and-power.html">
+            
+                    
+                    Switches and Power
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="connectors.html">
+            
+                <a href="connectors.html">
+            
+                    
+                    Connectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="network-information.html">
+            
+                <a href="network-information.html">
+            
+                    
+                    Network information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="driver-check-procedure.html">
+            
+                <a href="driver-check-procedure.html">
+            
+                    
+                    Driver Check Procedure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="demo-procedure.html">
+            
+                <a href="demo-procedure.html">
+            
+                    
+                    Demo Procedure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="additional-resources.html">
+            
+                <a href="additional-resources.html">
+            
+                    
+                    Additional Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Diagrams</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="diagrams">Diagrams</h1>
+<h2 id="joint-indexes">Joint Indexes</h2>
+<table>
+<thead>
+<tr>
+<th>Joint Indexes (CAN bus)</th>
+<th>Joint Indexes (YARP ports)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="DH" src="fig/Joints_(can).png" width="300"></td>
+<td><img alt="DH" src="fig/Joints_(yarp).png" width="500"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="joint-directions-of-rotation">Joint Directions of Rotation</h2>
+<table>
+<thead>
+<tr>
+<th>Joint Directions of Rotation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="DH" src="fig/Directions.png" width="300"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="dh-coordinate-systems">DH Coordinate Systems</h2>
+<p><img alt="DH" src="fig/dh-drawing.png" width="400"></p>
+<h2 id="link-lengths">Link Lengths</h2>
+<p><img alt="DH" src="fig/Lengths.png" width="250">
+<img alt="DH" src="fig/TEO_by_links.jpg" width="400"></p>
+<h2 id="link-names">Link Names</h2>
+<div class="mermaid">
+graph TD
+
+%% head and some trunk
+FrontalNeck[FrontalNeck]
+AxialNeck[AxialNeck]
+FrontalNeck--&gt;|FrontalNeck| AxialNeck
+
+FrontalTrunk[FrontalTrunk]
+AxialNeck--&gt;|AxialNeck|FrontalTrunk
+
+
+%% rightArm
+FrontalRightShoulder[FrontalRightShoulder]
+FrontalTrunk--&gt;|FrontalRightShoulder|FrontalRightShoulder
+
+SagittalRightShoulder[SagittalRightShoulder]
+FrontalRightShoulder--&gt;|SagittalRightShoulder|SagittalRightShoulder
+
+AxialRightShoulder[AxialRightShoulder]
+SagittalRightShoulder--&gt;|AxialRightShoulder|AxialRightShoulder
+
+FrontalRightElbow[FrontalRightElbow]
+AxialRightShoulder--&gt;|FrontalRightElbow|FrontalRightElbow
+
+AxialRightWrist[AxialRightWrist]
+FrontalRightElbow--&gt;|AxialRightWrist|AxialRightWrist
+
+FrontalRightWrist[FrontalRightWrist]
+AxialRightWrist--&gt;|FrontalRightWrist|FrontalRightWrist
+
+
+%% more trunk
+AxialTrunk[AxialTrunk]
+FrontalTrunk--&gt;|FrontalTrunk|AxialTrunk
+
+Root[Root]
+AxialTrunk--&gt;|AxialTrunk|Root
+
+
+%% rightLeg
+AxialRightHip[AxialRightHip]
+Root--&gt;|AxialRightHip|AxialRightHip
+
+SagittalRightHip[SagittalRightHip]
+AxialRightHip--&gt;|SagittalRightHip|SagittalRightHip
+
+FrontalRightHip[FrontalRightHip]
+SagittalRightHip--&gt;|FrontalRightHip|FrontalRightHip
+
+FrontalRightKnee[FrontalRightKnee]
+FrontalRightHip--&gt;|FrontalRightKnee|FrontalRightKnee
+
+FrontalRightAnkle[FrontalRightAnkle]
+FrontalRightKnee--&gt;|FrontalRightAnkle|FrontalRightAnkle
+
+SagittalRightAnkle[SagittalRightAnkle]
+FrontalRightAnkle--&gt;|SagittalRightAnkle|SagittalRightAnkle
+
+
+%% leftLeg
+AxialLeftHip[AxialLeftHip]
+Root--&gt;|AxialLeftHip|AxialLeftHip
+
+SagittalLeftHip[SagittalLeftHip]
+AxialLeftHip--&gt;|SagittalLeftHip|SagittalLeftHip
+
+FrontalLeftHip[FrontalLeftHip]
+SagittalLeftHip--&gt;|FrontalLeftHip|FrontalLeftHip
+
+FrontalLeftKnee[FrontalLeftKnee]
+FrontalLeftHip--&gt;|FrontalLeftKnee|FrontalLeftKnee
+
+FrontalLeftAnkle[FrontalLeftAnkle]
+FrontalLeftKnee--&gt;|FrontalLeftAnkle|FrontalLeftAnkle
+
+SagittalLeftAnkle[SagittalLeftAnkle]
+FrontalLeftAnkle--&gt;|SagittalLeftAnkle|SagittalLeftAnkle
+
+
+%% leftArm
+FrontalLeftShoulder[FrontalLeftShoulder]
+FrontalTrunk--&gt;|FrontalLeftShoulder|FrontalLeftShoulder
+
+SagittalLeftShoulder[SagittalLeftShoulder]
+FrontalLeftShoulder--&gt;|SagittalLeftShoulder|SagittalLeftShoulder
+
+AxialLeftShoulder[AxialLeftShoulder]
+SagittalLeftShoulder--&gt;|AxialLeftShoulder|AxialLeftShoulder
+
+FrontalLeftElbow[FrontalLeftElbow]
+AxialLeftShoulder--&gt;|FrontalLeftElbow|FrontalLeftElbow
+
+AxialLeftWrist[AxialLeftWrist]
+FrontalLeftElbow--&gt;|AxialLeftWrist|AxialLeftWrist
+
+FrontalLeftWrist[FrontalLeftWrist]
+AxialLeftWrist--&gt;|FrontalLeftWrist|FrontalLeftWrist
+</div>
+
+<ul>
+<li>Github: <a href="fig/teo-link-names.pdf">teo-link-names.pdf</a></li>
+<li>Gitbook: <div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="fig/teo-link-names.pdf">View PDF</a></div>
+                
+                                <object data="fig/teo-link-names.pdf" width="100%" height="1100" type="application/pdf">
+                                    <embed src="fig/teo-link-names.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="fig/teo-link-names.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></li>
+</ul>
+<h2 id="cogs">COGs</h2>
+<table>
+<thead>
+<tr>
+<th>COGs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="DH" src="fig/Masses.png" width="300"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="ft-sensors">F/T sensors</h2>
+<h3 id="ft-sensors-ports-channels-and-coordinate-systems">F/T sensors (Ports, channels and coordinate systems)</h3>
+<table>
+<thead>
+<tr>
+<th>F/T sensors (Ports and channels)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="DH" src="fig/Ftsensors.png" width="300"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ft-sensors-mechanical">F/T sensors (Mechanical)</h3>
+<ul>
+<li>Github: <a href="fig/Jr3_50M31_corregido.pdf">Jr3 50M31 corregido.pdf</a></li>
+<li>Gitbook: <div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="fig/Jr3_50M31_corregido.pdf">View PDF</a></div>
+                
+                                <object data="fig/Jr3_50M31_corregido.pdf" width="100%" height="590" type="application/pdf">
+                                    <embed src="fig/Jr3_50M31_corregido.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="fig/Jr3_50M31_corregido.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></li>
+</ul>
+<h2 id="lacquey-fetch">Lacquey Fetch</h2>
+<p>This sketches were made with SolidWorks in order to provide the position of the next joints, in this case the fingers from the origin of the hand, not to provide detailed mechanical annotations for the hand.</p>
+<h3 id="lacquey-fetch-hand">Lacquey Fetch (Hand)</h3>
+<ul>
+<li>Github: <a href="fig/fetch-hand.pdf">fetch-hand.pdf</a></li>
+<li>Gitbook: <div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="fig/fetch-hand.pdf">View PDF</a></div>
+                
+                                <object data="fig/fetch-hand.pdf" width="100%" height="590" type="application/pdf">
+                                    <embed src="fig/fetch-hand.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="fig/fetch-hand.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></li>
+</ul>
+<h3 id="lacquey-fetch-proximal-falange">Lacquey Fetch (Proximal Falange)</h3>
+<ul>
+<li>Github: <a href="fig/fetch-proximal-falange.pdf">fetch-proximal-falange.pdf</a></li>
+<li>Gitbook: <div class="pdf">
+                                
+                <div class="pdf__link"><a target="_blank" href="fig/fetch-proximal-falange.pdf">View PDF</a></div>
+                
+                                <object data="fig/fetch-proximal-falange.pdf" width="100%" height="590" type="application/pdf">
+                                    <embed src="fig/fetch-proximal-falange.pdf">
+                                        <p>
+                                            This browser does not support PDFs. <br>
+                                            Please download the PDF to view it: <a target="_blank" href="fig/fetch-proximal-falange.pdf">Download PDF</a>.
+                                        </p>
+                                    
+                                </object>
+                            </div></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tutorial/ft.html" class="navigation navigation-prev " aria-label="Previous page: Force/Torque Sensors">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tables.html" class="navigation navigation-next " aria-label="Next page: Tables">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Diagrams","level":"1.6","depth":1,"next":{"title":"Tables","level":"1.7","depth":1,"path":"tables.md","ref":"tables.md","articles":[]},"previous":{"title":"Force/Torque Sensors","level":"1.5.5","depth":2,"path":"tutorial/ft.md","ref":"tutorial/ft.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-csv","embed-pdf","mermaid-gb3","include","page-toc","scripts"],"pluginsConfig":{"include-csv":{},"include":{},"scripts":{"files":["./js/scripts.js"]},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"embed-pdf":{}},"structure":{"langs":"LANGS.md","readme":"gitbook-cover.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"diagrams.md","mtime":"2021-05-12T15:45:31.454Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-12T15:46:08.427Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-scripts/efd16c0c6aa627bf51746530f7998497-scripts.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

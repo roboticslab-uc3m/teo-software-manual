@@ -1,0 +1,638 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Motor Control · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="trajectories.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    TEO Developer Manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introduction.html">
+            
+                <a href="../introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../architecture.html">
+            
+                <a href="../architecture.html">
+            
+                    
+                    Cognitive Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../overview/">
+            
+                <a href="../overview/">
+            
+                    
+                    Software Repositories
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../overview/pc.html">
+            
+                <a href="../overview/pc.html">
+            
+                    
+                    PC Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../overview/firmware.html">
+            
+                <a href="../overview/firmware.html">
+            
+                    
+                    Firmware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../overview/demonstration.html">
+            
+                <a href="../overview/demonstration.html">
+            
+                    
+                    Demonstration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../overview/research.html">
+            
+                <a href="../overview/research.html">
+            
+                    
+                    Research
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../overview/development.html">
+            
+                <a href="../overview/development.html">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Tutorial
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="motor.html">
+            
+                <a href="motor.html">
+            
+                    
+                    Motor Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="trajectories.html">
+            
+                <a href="trajectories.html">
+            
+                    
+                    Trajectory Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="rgbd.html">
+            
+                <a href="rgbd.html">
+            
+                    
+                    RGB-D Sensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="mesh.html">
+            
+                <a href="mesh.html">
+            
+                    
+                    Mesh From Real Depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="ft.html">
+            
+                <a href="ft.html">
+            
+                    
+                    Force/Torque Sensors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../diagrams.html">
+            
+                <a href="../diagrams.html">
+            
+                    
+                    Diagrams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../tables.html">
+            
+                <a href="../tables.html">
+            
+                    
+                    Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../dynamic-information.html">
+            
+                <a href="../dynamic-information.html">
+            
+                    
+                    Dynamic information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../switches-and-power.html">
+            
+                <a href="../switches-and-power.html">
+            
+                    
+                    Switches and Power
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../connectors.html">
+            
+                <a href="../connectors.html">
+            
+                    
+                    Connectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../network-information.html">
+            
+                <a href="../network-information.html">
+            
+                    
+                    Network information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../driver-check-procedure.html">
+            
+                <a href="../driver-check-procedure.html">
+            
+                    
+                    Driver Check Procedure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../demo-procedure.html">
+            
+                <a href="../demo-procedure.html">
+            
+                    
+                    Demo Procedure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../additional-resources.html">
+            
+                <a href="../additional-resources.html">
+            
+                    
+                    Additional Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Motor Control</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tutorial-motor-control">Tutorial: Motor Control</h1>
+<p>Throughout this section, refer to the <a href="diagrams.html#joint-indexes">Joint Indexes (YARP ports)</a>  diagram to see port names and joint indexes, as well as the <a href="diagrams.html#joint-directions-of-rotation">Joint Directions of Rotation</a> diagram.</p>
+<h2 id="directly-talking-to-ports">Directly talking to ports</h2>
+<p>Recall that this is hackish and subject to change. From a terminal, connect to the limb you prefer (substitute <code>leftArm</code> following the above mentioned diagram):</p>
+<pre><code class="lang-bash">yarp rpc /teoSim/leftArm/rpc:i
+</code></pre>
+<p>From within this, we can send joint space movements, read encoders, etc. For instance, send an absolute joint position command, to joint 0, setting the target to -25 degrees:</p>
+<pre><code class="lang-text">set pos 0 -25
+</code></pre>
+<p>You should in turn receive should get some kind of feedback, such as:</p>
+<pre><code class="lang-text">Response: [ok]
+</code></pre>
+<p>In line with the hacks mentioned above, refer to a more exhaustive list at: <a href="http://robots.uc3m.es/gitbook-developer-manual/appendix/yarp-tricks.html#remotecontrolboard" target="_blank">yarp-tricks: remote_controlboard (from developer-manual)</a></p>
+<h2 id="via-guis">Via GUIs</h2>
+<p>Two options to launch the YARP motor GUI for <code>teoSim</code>:</p>
+<ul>
+<li><p>Via terminal:</p>
+<pre><code class="lang-bash">yarpmotorgui --from yarpmotorgui/teoSim.ini
+</code></pre>
+</li>
+<li><p>Via the application manager (better practice): Navigate through <code>Applications</code> &gt; <code>teoSimTools_App</code> &gt; right-click on <code>yarpmotorgui</code> &gt; <code>Run</code></p>
+</li>
+</ul>
+<p>Any of the two options, and clicking <code>OK</code> (ignore the current warnings regarding hands for now) should get you a window similar to the one depicted below.</p>
+<p><img src="../fig/teo-yarpmotorgui.png" alt="yarpmotorgui"></p>
+<h2 id="via-apis">Via APIs</h2>
+<p>The preferred approach, using the APIs provided by YARP within our programs and scripts.</p>
+<ul>
+<li>APIs<ul>
+<li><a href="https://www.yarp.it/yarp_motor_control.html" target="_blank">The YARP motor control interfaces</a></li>
+<li><a href="https://www.yarp.it/classyarp_1_1dev_1_1IPositionControl.html" target="_blank">yarp::dev::IPositionControl</a></li>
+<li><a href="https://www.yarp.it/classyarp_1_1dev_1_1IVelocityControl.html" target="_blank">yarp::dev::IVelocityControl</a></li>
+<li><a href="https://www.yarp.it/classyarp_1_1dev_1_1ITorqueControl.html" target="_blank">yarp::dev::ITorqueControl</a></li>
+<li><a href="https://www.yarp.it/classyarp_1_1dev_1_1IEncoders.html" target="_blank">yarp::dev::IEncoders</a></li>
+<li>Implementation in simulator<ul>
+<li><a href="http://robots.uc3m.es/dox-openrave-yarp-plugins/classroboticslab_1_1YarpOpenraveControlboard.html" target="_blank">roboticslab::YarpOpenraveControlboard</a></li>
+<li><a href="https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/master/libraries/YarpPlugins/YarpOpenraveControlboard" target="_blank">openrave-yarp-plugins/libraries/YarpPlugins/YarpOpenraveControlboard</a></li>
+</ul>
+</li>
+<li>Implementation in real robot<ul>
+<li><a href="http://robots.uc3m.es/dox-yarp-devices/classroboticslab_1_1CanBusControlboard.html" target="_blank">roboticslab::CanBusControlboard</a></li>
+<li><a href="https://github.com/roboticslab-uc3m/yarp-devices/tree/master/libraries/YarpPlugins/CanBusControlboard" target="_blank">yarp-devices/libraries/YarpPlugins/CanBusControlboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Examples (in the <code>remote</code> line, switch to <code>/teoSim/leftArm</code> or the limb of your selection)<ul>
+<li>C++<ul>
+<li><a href="https://github.com/roboticslab-uc3m/yarp-devices/tree/master/examples/cpp/exampleRemoteControlboard" target="_blank">yarp-devices/examples/cpp/exampleRemoteControlboard</a></li>
+<li><a href="https://github.com/roboticslab-uc3m/yarp-devices/tree/master/examples/cpp/exampleRemoteControlboardModule" target="_blank">yarp-devices/examples/cpp/exampleRemoteControlboardModule</a></li>
+<li><a href="https://github.com/roboticslab-uc3m/yarp-devices/tree/master/examples/cpp/examplePositionDirect" target="_blank">yarp-devices/examples/cpp/examplePositionDirect</a></li>
+<li><a href="https://robotology.github.io/robotology-documentation/doc/html/icub_motor_control_tutorial.html" target="_blank">iCub-main: Getting accustomed with motor interfaces</a></li>
+</ul>
+</li>
+<li>MATLAB<ul>
+<li><a href="https://github.com/roboticslab-uc3m/yarp-devices/blob/master/examples/matlab/exampleRemoteControlboard.m" target="_blank">yarp-devices/examples/matlab/exampleRemoteControlboard.m</a></li>
+</ul>
+</li>
+<li>Python<ul>
+<li><a href="https://github.com/roboticslab-uc3m/yarp-devices/blob/master/examples/python/exampleRemoteControlboard.py" target="_blank">yarp-devices/examples/python/exampleRemoteControlboard.py</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Tutorial">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="trajectories.html" class="navigation navigation-next " aria-label="Next page: Trajectory Execution">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Motor Control","level":"1.5.1","depth":2,"next":{"title":"Trajectory Execution","level":"1.5.2","depth":2,"path":"tutorial/trajectories.md","ref":"tutorial/trajectories.md","articles":[]},"previous":{"title":"Tutorial","level":"1.5","depth":1,"path":"tutorial/README.md","ref":"tutorial/README.md","articles":[{"title":"Motor Control","level":"1.5.1","depth":2,"path":"tutorial/motor.md","ref":"tutorial/motor.md","articles":[]},{"title":"Trajectory Execution","level":"1.5.2","depth":2,"path":"tutorial/trajectories.md","ref":"tutorial/trajectories.md","articles":[]},{"title":"RGB-D Sensor","level":"1.5.3","depth":2,"path":"tutorial/rgbd.md","ref":"tutorial/rgbd.md","articles":[]},{"title":"Mesh From Real Depth","level":"1.5.4","depth":2,"path":"tutorial/mesh.md","ref":"tutorial/mesh.md","articles":[]},{"title":"Force/Torque Sensors","level":"1.5.5","depth":2,"path":"tutorial/ft.md","ref":"tutorial/ft.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-csv","embed-pdf","mermaid-gb3","include","page-toc","scripts"],"pluginsConfig":{"include-csv":{},"include":{},"scripts":{"files":["./js/scripts.js"]},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"embed-pdf":{}},"structure":{"langs":"LANGS.md","readme":"gitbook-cover.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tutorial/motor.md","mtime":"2021-05-12T15:45:31.654Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-12T15:46:08.427Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scripts/efd16c0c6aa627bf51746530f7998497-scripts.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

@@ -1,0 +1,682 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Trajectory Execution · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rgbd.html" />
+    
+    
+    <link rel="prev" href="motor.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    TEO Developer Manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../introduction.html">
+            
+                <a href="../introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../architecture.html">
+            
+                <a href="../architecture.html">
+            
+                    
+                    Cognitive Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../overview/">
+            
+                <a href="../overview/">
+            
+                    
+                    Software Repositories
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../overview/pc.html">
+            
+                <a href="../overview/pc.html">
+            
+                    
+                    PC Software
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../overview/firmware.html">
+            
+                <a href="../overview/firmware.html">
+            
+                    
+                    Firmware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../overview/demonstration.html">
+            
+                <a href="../overview/demonstration.html">
+            
+                    
+                    Demonstration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../overview/research.html">
+            
+                <a href="../overview/research.html">
+            
+                    
+                    Research
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../overview/development.html">
+            
+                <a href="../overview/development.html">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Tutorial
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="motor.html">
+            
+                <a href="motor.html">
+            
+                    
+                    Motor Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="trajectories.html">
+            
+                <a href="trajectories.html">
+            
+                    
+                    Trajectory Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="rgbd.html">
+            
+                <a href="rgbd.html">
+            
+                    
+                    RGB-D Sensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="mesh.html">
+            
+                <a href="mesh.html">
+            
+                    
+                    Mesh From Real Depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="ft.html">
+            
+                <a href="ft.html">
+            
+                    
+                    Force/Torque Sensors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../diagrams.html">
+            
+                <a href="../diagrams.html">
+            
+                    
+                    Diagrams
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../tables.html">
+            
+                <a href="../tables.html">
+            
+                    
+                    Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../dynamic-information.html">
+            
+                <a href="../dynamic-information.html">
+            
+                    
+                    Dynamic information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../switches-and-power.html">
+            
+                <a href="../switches-and-power.html">
+            
+                    
+                    Switches and Power
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../connectors.html">
+            
+                <a href="../connectors.html">
+            
+                    
+                    Connectors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../network-information.html">
+            
+                <a href="../network-information.html">
+            
+                    
+                    Network information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../driver-check-procedure.html">
+            
+                <a href="../driver-check-procedure.html">
+            
+                    
+                    Driver Check Procedure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../demo-procedure.html">
+            
+                <a href="../demo-procedure.html">
+            
+                    
+                    Demo Procedure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../additional-resources.html">
+            
+                <a href="../additional-resources.html">
+            
+                    
+                    Additional Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Trajectory Execution</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tutorial-trajectory-execution">Tutorial: Trajectory Execution</h1>
+<p>Now that you should know how to instruct your robot to go from point A to point B in a simple motion instruction (see <a href="tutorial/motor.md">Tutorial: Motor Control</a>), this tutorial will cover more complex, arbitrary multi-setpoint trajectories.</p>
+<h2 id="position-controlled-high-frequency-trajectories">Position-controlled high frequency trajectories</h2>
+<p>The most straightforward way to command a robot involves position commands since they abstract from the underlying control loops, which ultimately translate to current references applied to the motors.
+As opposed to having robot joints perform a steady, long transition from origin to goal, it is also interesting to follow whole paths of points defined as closely together (in terms of space and time) as possible, which would render the resulting motion smooth and highly dynamic.</p>
+<p>In short, this is your preferred control mode if you need to:</p>
+<ol>
+<li>traverse a list of points which are known beforehand (a.k.a. <strong>offline-based</strong> trajectories), e.g. read from a file and/or generated by an offline planner, or</li>
+<li>translate a &quot;live&quot; source of targets (i.e. <strong>online-based</strong>) into robot motion, acquired through a controller device such as a joystick, fetched from a visual servoing system, or generated with a time-parameterized formula, for instance.</li>
+</ol>
+<p>However, it is <strong>not</strong> a good choice whenever the distance between points is too high and/or the expected time step per instruction is close to the order of one second or more (most usually, we want to issue position commands every 10-50 milliseconds, hence the &quot;high frequency&quot;).
+In that case, stick to <a href="tutorial/motor.md">Tutorial: Motor Control</a> and the <a href="http://www.yarp.it/git-master/classyarp_1_1dev_1_1IPositionControl.html" target="_blank"><code>yarp::dev::IPositionControl</code></a> interface.</p>
+<p>The adequate YARP interface to achieve position-controlled high frequency trajectories is <a href="http://www.yarp.it/git-master/classyarp_1_1dev_1_1IPositionDirect.html" target="_blank"><code>yarp::dev::IPositionDirect</code></a>.</p>
+<h3 id="methods">Methods</h3>
+<p>We have prepared several implementations to cover most common scenarios, make sure to pick the one that best fits your needs.
+The current default is <strong>&quot;online remote push&quot;</strong>, which is often the correct choice in terms of support for online/offline trajectories, remote launch and simulation-readiness.</p>
+<table>
+<thead>
+<tr>
+<th>method</th>
+<th style="text-align:center">internal<br>mode</th>
+<th style="text-align:center">online<br>trajectories</th>
+<th style="text-align:center">offline<br>trajectories</th>
+<th style="text-align:center">suitable for<br>simulation</th>
+<th style="text-align:center">variable<br>period</th>
+<th style="text-align:center">launched<br>locally</th>
+<th style="text-align:center">launched<br>remotely</th>
+<th style="text-align:center">examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>online remote push</td>
+<td style="text-align:center">CSP</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center">no</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center"><a href="https://roboticslab-uc3m.github.io/yarp-devices/exampleOnlineTrajectoryRemotePush_8cpp-example.html" target="_blank">C++</a>, <a href="https://roboticslab-uc3m.github.io/yarp-devices/exampleOnlineTrajectoryRemotePush_8py-example.html" target="_blank">Python</a></td>
+</tr>
+<tr>
+<td>online remote pull</td>
+<td style="text-align:center">CSP</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center">no (1)</td>
+<td style="text-align:center"><strong>yes</strong> (2)</td>
+<td style="text-align:center">no</td>
+<td style="text-align:center">no (1)</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center"><a href="https://roboticslab-uc3m.github.io/yarp-devices/exampleOnlineTrajectoryRemotePull_8cpp-example.html" target="_blank">C++</a>, <a href="https://roboticslab-uc3m.github.io/yarp-devices/exampleOnlineTrajectoryRemotePull_8py-example.html" target="_blank">Python</a></td>
+</tr>
+<tr>
+<td>online local pull</td>
+<td style="text-align:center">CSP</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center">no (1)</td>
+<td style="text-align:center">no</td>
+<td style="text-align:center">no</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center">no</td>
+<td style="text-align:center"><a href="https://roboticslab-uc3m.github.io/yarp-devices/exampleOnlineTrajectoryLocalPull_8cpp-example.html" target="_blank">C++</a></td>
+</tr>
+<tr>
+<td>offline synchronous</td>
+<td style="text-align:center">ip (pt/pvt)</td>
+<td style="text-align:center">no</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center">no</td>
+<td style="text-align:center">no</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center"><strong>yes</strong> (4)</td>
+<td style="text-align:center"><a href="https://roboticslab-uc3m.github.io/yarp-devices/exampleOfflineTrajectorySync_8cpp-example.html" target="_blank">C++</a>, <a href="https://roboticslab-uc3m.github.io/yarp-devices/exampleOfflineTrajectorySync_8py-example.html" target="_blank">Python</a></td>
+</tr>
+<tr>
+<td>offline asynchronous</td>
+<td style="text-align:center">ip (pt/pvt)</td>
+<td style="text-align:center">no (3)</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center">no</td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center"><strong>yes</strong></td>
+<td style="text-align:center"><a href="https://roboticslab-uc3m.github.io/yarp-devices/exampleOfflineTrajectoryAsync_8cpp-example.html" target="_blank">C++</a>, <a href="https://roboticslab-uc3m.github.io/yarp-devices/exampleOfflineTrajectoryAsync_8py-example.html" target="_blank">Python</a></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>(1) Technically plausible, but either suboptimal or makes little sense since better alternatives exist.</li>
+<li>(2) An emulated sync port is needed, use <code>yarp clock --period value_ms --name /port</code> to stream current time at the desired rate.</li>
+<li>(3) Unless you really don&apos;t mind coping with noticeable delays due to having an internal buffer of points.</li>
+<li>(4) Make sure to configure your output port in write strict mode, or pass <code>--writeStrict on</code> to the <code>remote_controlboard</code> device.</li>
+</ul>
+<h3 id="glossary">Glossary</h3>
+<p>The <a href="https://github.com/roboticslab-uc3m/yarp-devices/tree/master/libraries/YarpPlugins/TechnosoftIpos" target="_blank"><code>TechnosoftIpos</code></a> device encapsulates a collection of CANopen instructions that enable communication with the robot&apos;s iPOS drivers.
+We have implemented <code>yarp::dev::IPositionDirect</code> in a twofold manner:</p>
+<ul>
+<li>Cyclic synchronous position (CSP): this low-level iPOS mode assumes position commands are sent in a periodic manner - in our case, defined by the <code>syncPeriod</code> option to <a href="https://github.com/roboticslab-uc3m/yarp-devices/tree/master/libraries/YarpPlugins/CanBusControlboard" target="_blank"><code>CanBusControlboard</code></a> (current default at time of writing is 0.02 seconds). If you choose a CSP-compliant method, <strong>it is paramount to send your commands using the exact same period</strong> if you want to achieve smooth behavior. Provided examples also show how to avoid detrimental time drifts.</li>
+<li>Interpolated position (ip): involves an internal setpoint buffer which depletes at a constant (<strong>synchronous</strong>) or variable (<strong>asynchronous</strong>) period. Because of said buffer and the delays it would introduce, <em>ip</em> is not suitable for online trajectories. Users can select one of two submodes: <em>pt</em> (linear interpolation) or <em>pvt</em> (cubic interpolation). Note that <em>ip</em> is considered legacy per the latest CANopen standards.</li>
+</ul>
+<p>On the above premises, implemented methods can be described as follows:</p>
+<ul>
+<li>Online remote push: CSP trajectory execution, best suited for online targets generated on the fly (but also good if loading saved setpoints from a file), can be tested on the simulator. In this case, the client application manages a timer or anything of that sort to &quot;push&quot; setpoints on a precise schedule. Said application is usually not executed aboard the robot (i.e. remote).</li>
+<li>Online remote pull: largely the same as above except that it is designed to connect to a remote synchronization port and send position commands in a callback fashion. The port streams current system clock at the same rate CSP expects a new setpoint. On the real robot, look for a <code>/&lt;prefix&gt;/sync:o</code> port. You can also mimick this behavior in simulation, check the footnotes for the previous table.</li>
+<li>Online local pull: also callback-based in the same vein, but it depends on passing a semaphore handle to <code>CanBusControlboard</code>, therefore it is only suitable for applications that run on the robot board and instantiate <code>CanBusControlboard</code> along with the full robot configuration. The handle you need to pass is an instance of <a href="https://roboticslab-uc3m.github.io/yarp-devices/classroboticslab_1_1StateObserver.html" target="_blank"><code>StateObserver</code></a>.</li>
+<li>Offline synchronous: depends on <a href="http://www.yarp.it/git-master/classyarp_1_1dev_1_1IRemoteVariables.html" target="_blank"><code>yarp::dev::IRemoteVariables</code></a> to correctly configure <code>TechnosoftIpos</code> for compliance with the <em>ip</em> mode (<a href="https://roboticslab-uc3m.github.io/yarp-devices/md_libraries_YarpPlugins_CanBusControlboard_README.html" target="_blank">docs</a>). Solely for use in offline trajectories (e.g. loaded from file) in which all targets are expected to be reached on a fixed period (i.e. synchronously). For efficiency, you should send all those points at once, as opposed to using a timer or a <code>for</code>-loop with delays.</li>
+<li>Offline asynchronous: same as above, but points are sent gradually instead of in a single batch. It is allowed to have a varying period between points. Therefore, commands would be usually issued in a <code>for</code>-loop with a variable delay (i.e. asynchronously).</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="motor.html" class="navigation navigation-prev " aria-label="Previous page: Motor Control">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rgbd.html" class="navigation navigation-next " aria-label="Next page: RGB-D Sensor">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Trajectory Execution","level":"1.5.2","depth":2,"next":{"title":"RGB-D Sensor","level":"1.5.3","depth":2,"path":"tutorial/rgbd.md","ref":"tutorial/rgbd.md","articles":[]},"previous":{"title":"Motor Control","level":"1.5.1","depth":2,"path":"tutorial/motor.md","ref":"tutorial/motor.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["include-csv","embed-pdf","mermaid-gb3","include","page-toc","scripts"],"pluginsConfig":{"include-csv":{},"include":{},"scripts":{"files":["./js/scripts.js"]},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h2, .markdown-section h3, .markdown-section h4","showByDefault":true},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"embed-pdf":{}},"structure":{"langs":"LANGS.md","readme":"gitbook-cover.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tutorial/trajectories.md","mtime":"2021-05-12T15:45:31.654Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-12T15:46:08.427Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-scripts/efd16c0c6aa627bf51746530f7998497-scripts.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
